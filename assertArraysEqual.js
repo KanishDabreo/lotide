@@ -1,4 +1,4 @@
-const eqArrays = function (arrayOne, arrayTwo) {
+const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) {
     return false;
   }
@@ -10,7 +10,7 @@ const eqArrays = function (arrayOne, arrayTwo) {
   return true;
 };
 
-const assertArrayEqual = function (actual, expected) {
+const assertArrayEqual = function(actual, expected) {
   //console.log(eqArrays);
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
