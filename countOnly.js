@@ -5,9 +5,8 @@ const assertEqual = function(actual, expected) {
   } else if (actual !== expected) {
     console.log(`✅✅✅ Assertion Failed: ${actual} !== ${expected}`);
   }
-
 };
-
+module.exports = countOnly;
 /* This function should take in a collection of items and return counts for a specific subset of those items. It won't count everything. In order to decide what to count, it will also be given an idea of which items we care about and it will only count those, ignoring the others.*/
 
 // allItems: an array of strings that we need to look through
