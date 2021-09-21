@@ -1,14 +1,4 @@
-const eqArrays = function(arrayOne, arrayTwo) {
-  if (arrayOne.length !== arrayTwo.length) {
-    return false;
-  }
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArrayEqual = function(actual, expected) {
   //console.log(eqArrays);
@@ -20,6 +10,5 @@ const assertArrayEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-//console.log(eqArrays(["5", "2", "3"], ["1", "2", "3"]))
-assertArrayEqual(["5", "2", "3"], ["1", "2", "3"])
-//1st array = actual and 1nd array= expected parameters
+
+module.exports = assertArrayEqual;
